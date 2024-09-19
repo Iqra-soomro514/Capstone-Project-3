@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cartzilla | Account - Log In</title>
+    <link rel="stylesheet" href="./signin&signup.css">
+    <script src="https://code.iconify.design/iconify-icon/2.1.0/iconify-icon.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/iconify-icon@2.1.0/dist/iconify-icon.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+</head>
+<body>
+     <!-- Page content -->
+     <main class="content-wrapper w-100 px-3 ps-lg-5 pe-lg-4 mx-auto" style="max-width: 1920px">
+        <div class="d-lg-flex">
+          <!-- Login form + Footer -->
+          <div class="d-flex flex-column min-vh-100 w-100 py-4 mx-auto me-lg-5" style="max-width: 416px">
+            <!-- Logo -->
+            <header class="navbar px-0 pb-4 mt-n2 mt-sm-0 mb-2 mb-md-3 mb-lg-4">
+              <a href="../index.html" class="navbar-brand pt-0">
+                <span class="d-flex flex-shrink-0 text-primary me-2"><span></span>
+            </header>
+            <h1 class="h2 mt-auto">Welcome back</h1>
+            <div class="nav fs-sm mb-4 text create fw-semi">
+              Don't have an account?
+              <a class="nav-line fw-medium p-0 ms-2 create" href="/pages/signin.html">Create an account</a>
+            </div>
+            <!-- Form -->
+            <form class="needs-validation" id="signinForm">
+              <div class="position-relative mb-4">
+                <input type="email" id="userEmail" class="form-control form-control-lg" placeholder="Email" required="">
+                <div class="invalid-tooltip bg-transparent py-0">Enter a valid email address!</div>
+              </div>
+              <div class="mb-4">
+                <div class="password-toggle">
+                  <input type="password" id="userPassword" class="form-control form-control-lg" placeholder="Password" required="">
+                  <div class="invalid-tooltip bg-transparent py-0">Password is incorrect!</div>
+                  <label class="password-toggle-button fs-lg" aria-label="Show/hide password">
+                    <input type="checkbox" class="btn-check">
+                  </label>
+                </div>
+              </div>
+              <div class="d-flex align-items-center justify-content-between mb-4">
+                <div class="form-check me-2">
+                  <input type="checkbox" class="form-check-input" id="remember-30">
+                  <label for="remember-30" class="form-check-label">Remember for 30 days</label>
+                </div>
+                <div class="nav">
+                  <a class="nav-link animate-underline p-0" href="">
+                    <span class="animate-target create fw-medium ancor">Forgot password?</span>
+                  </a>
+                </div>
+              </div>
+              <button type="submit" class="btn btn-lg btn-danger w-100">Sign In</button>
+            </form>
+            <!-- Divider -->
+            <div class="d-flex align-items-center my-4">
+              <hr class="w-100 m-0">
+              <span class="text-body-emphasis fw-medium text-nowrap mx-4">or continue with</span>
+              <hr class="w-100 m-0">
+            </div>
+            <!-- Social login -->
+            <div class="d-flex flex-column flex-sm-row gap-3 pb-4 mb-3 mb-lg-4">
+                <button type="button" class="fbBtn create w-100 px-2 d-flex justify-content-center">
+                    <iconify-icon class="fw-bold create mt-1"></iconify-icon>Google
+                </button>
+              <button type="button" class="fbBtn create w-100 px-2 d-flex justify-content-center">
+                <iconify-icon class="fw-bold create mt-1"></iconify-icon>Facebook
+              </button>
+              <button type="button" class="fbBtn create w-100 px-2 d-flex justify-content-center">
+                <iconify-icon  class="fw-bold create mt-1"></iconify-icon>Apple
+              </button>
+            </div>
+            <!-- Footer -->
+            <footer class="mt-auto">
+              <div class="nav mb-4 create">
+                <a class="p-0 create" href="#">Need help?</a>
+              </div>
+              <p class="fs-xs mb-0">
+                © All rights reserved. Made by <span class="animate-underline"><a class="animate-target text-dark-emphasis text-decoration-none ancor" href="https://createx.studio/" target="_blank" rel="noreferrer">Createx Studio</a></span>
+              </p>
+            </footer>
+          </div>
+           <!-- Cover image visible on screens > 992px wide (lg breakpoint) -->
+        <div class="d-none d-lg-block w-100 py-4 ms-auto position-relative" style="max-width: 1034px">
+            <div class="d-flex flex-column justify-content-end h-100 rounded-5 overflow-hidden">
+              <span class="position-relative top-0 start-0 w-100 h-100 d-none-dark" style="background: linear-gradient(-90deg, #accbee 0%, #e7f0fd 100%)"></span>
+              <div class="ratio position-absolute top-0">
+              </div>
+              <img src="../img/account-cover.png" class="z-2 mt-4 pt-4 ms-5 ps-3 position-absolute top-25 w-75"alt="Girl">
+            </div>
+              <span class="position-relative top-0 start-0 w-100 h-100 d-none d-block-dark" style="background: linear-gradient(-90deg, #1b273a 0%, #1f2632 1)"></span>
+            </div>
+          </div>
+        </div>
+    </main>
+    <script src="../pages/signin.js"></script>
+</body>
+</html>
+
+
